@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply w-full py-2 px-4 rounded font-medium transition duration-200 ease-in-out;
+}
+
+.btn:disabled{
+  @apply bg-gray-200 text-gray-600 pointer-events-none; //disable button after clicking it;
+}
+
+.confirmed:disabled{
+  @apply bg-gray-200 text-gray-600 pointer-events-none; //disabling confirmed button after clicking it;
+}
+
+.canceled:disabled{
+  @apply bg-gray-200 text-gray-600 pointer-events-none;//disabling cancled button after clicking it;
+}
+
+.completed:disabled{
+  @apply bg-gray-200 text-gray-600 pointer-events-none; //disabling completed button after clicking it;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.badge {
+  @apply text-xs inline-block p-1 px-2 leading-none text-center whitespace-nowrap align-baseline font-bold rounded;
+}
