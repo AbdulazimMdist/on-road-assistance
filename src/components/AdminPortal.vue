@@ -161,7 +161,7 @@ export default {
           break;
 
         case "canceled":
-          writeAdminChat(item.uid, "Unfortunately your request has been accepted. Sorry for the inconvenience!", () => {});
+          writeAdminChat(item.uid, "Unfortunately your request has not been accepted. Sorry for the inconvenience!", () => {});
           break;
 
         case "completed":
